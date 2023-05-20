@@ -1,13 +1,10 @@
-
-<!-- Mirrored from unqown.com/spotify by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 May 2023 17:06:41 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta property="og:description" content="Unqown Exe | Official Website">
-<meta name="og:title" property="og:title" content="Unqown Exe">
-<meta name="description" content="Unqown Exe | Official website">
+<meta property="og:description" content="sigmamales24 | Official Website">
+<meta name="og:title" property="og:title" content="sigmamales24">
+<meta name="description" content="sigmamales24 | Official website">
 
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#21222a">
@@ -19,7 +16,7 @@
 <html lang="tr" >
 <head>
   <meta charset="UTF-8">
-  <title>Unqown Exe | Spotify</title>
+  <title>sigmamales24 | Spotify</title>
   <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="Spotify.css">
@@ -63,7 +60,7 @@
 						document.querySelector('div[class="header-profile"]').innerHTML = `
 						
 				<div class="main-header">
-					<a id="username" class="menu-link-main" onclick="window.location = '/cikis'">Unqown Exe</a>
+					<a id="username" class="menu-link-main" onclick="window.location = '/cikis'">sigmamales24</a>
 				</div>
 				<img class="profile-img" id="userimage" src="">
 
@@ -145,7 +142,7 @@
 		</div>
 		<div class="main-container">
 			<div class="main-header">
-				<a class="menu-link-main" href="index.html">Unqown Exe</a>
+				<a class="menu-link-main" href="index.html">sigmamales24</a>
 				<div class="header-menu">
 					
 		
@@ -320,7 +317,7 @@ socket.emit("getProgram",e):login()})}function getCode(e){fetch("/logincheck").t
 `},400)}function searchR10(){let e=document.querySelector("#r10account").value,t=document.querySelector("#r10request"),i=document.querySelector("#r10request2"),o=document.querySelector("#requestbook"),n=document.querySelector("#searcharea"),a=document.querySelector('button[onclick="searchR10()"]');if(e.length<=2){i.textContent="Hata | Ge\xe7ersiz kullanıcı adı";return}o.disabled=!0,socket.emit("searchr10",e),socket.on("r10message",e=>i.innerHTML=e);let c=!1;socket.on("r10request",e=>{let s=`Bulunan kullanıcı${e.length>=2?"lar":""} <b>(${e.length} Ad.)</b><br>`,r=[];if(e.forEach(e=>{let t=`https://www.r10.net/profil/${e.userid}-${e.username}.html`;r.push(e.username),s+=`<a onclick="window.open('${t}', '_blank')">${t}</a><br>`}),"Bulunamadı"==r[0]){i.innerHTML=`Kimse bulunamadı`;return}n.innerHTML=`Şimdi aşağıdaki ${e.length>=2?"kullanıcılardan":"kullanıcıdan"} mesaj bekliyoruz.<br><br> <a onclick="window.open('https://www.r10.net/profil/157135-unqown.html', '_blank')">BURAYA</a> i\xe7eriği fark etmeksizin bir PM attıktan sonra aşağıdaki <b>EBook'u al</b> tuşuna bas.<br>Hemen PayPal hesabı oluşturmaya başla.`,t.innerHTML=s,i.innerHTML="",a.remove(),o.disabled=!1,c||(o.addEventListener("click",function(){socket.emit("checkPM",r)}),c=!0)})}function checklogin(){fetch("/logincheck").then(e=>e.json()).then(e=>{e.user?(document.querySelector('div[class="header-profile"]').innerHTML=`
 						
 				<div class="main-header">
-					<a id="username" class="menu-link-main" onclick="window.location = '/cikis'">Unqown Exe</a>
+					<a id="username" class="menu-link-main" onclick="window.location = '/cikis'">sigmamales24</a>
 				</div>
 				<img class="profile-img" id="userimage" src="">
 
